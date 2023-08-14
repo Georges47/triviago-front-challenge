@@ -3,12 +3,27 @@ import { Container, Grid, Typography } from "@mui/material";
 import AppBar from './AppBar';
 import MessageForm from './MessageForm';
 import Messages from './Messages';
-import {baseurl} from "./Const";
 
 function App() {
     const [messages, setMessages] = useState([]);
     const [currentPage, setCurrentPage] = useState(0);
     const [totalPages, setTotalPages] = useState(0);
+
+    const fetchMessages = async (page) => {
+        try {
+            const response = await fetch(`http://localhost:8080/messages`);
+            const data = await response.json();
+
+            setMessages(data.content);
+            setTotalPages(data.totalPages);
+        } catch (error) {
+            console.error('Error fetching messages:', error);
+        }
+    };
+
+    useEffect(() => {
+        fetchMessages(currentPage);
+    }, [currentPage]);
 
     const handleNewMessage = async (newMessage) => {
         try {
@@ -22,30 +37,12 @@ function App() {
 
             const data = await response.json();
 
-            setMessages([...messages, data]);
+            // Update messages by fetching the latest messages
+            fetchMessages(currentPage);
         } catch (error) {
             console.error('Error creating message:', error);
         }
     };
-
-    const fetchMessages = async (page) => {
-        console.log(`aaaaaaaaaaaaaaaaaaaaa`)
-        try {
-            const response = await fetch(baseurl + `/messages`);
-            const data = await response.json();
-
-            setMessages(data.content);
-            setTotalPages(data.totalPages);
-        } catch (error) {
-            console.error('Error fetching messages:', error);
-        }
-    };
-
-    useEffect(() => {
-        fetchMessages(currentPage);
-    }, []);
-
-    fetchMessages(currentPage)
 
     return (
         <Container className="App">
