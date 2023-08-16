@@ -1,16 +1,17 @@
 .messages {
+    gap:8px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 2rem;
 
     .message {
-        background-color: #f2f2f2;
-        border: 1px solid #ccc;
-        padding: 0.5rem;
-        margin: 0.5rem;
-        max-width: 80%;
+        border: none;
+        border-radius: 10px;
+        background-color: #76a5a9;
+        padding: 4px;
         word-wrap: break-word;
+        min-width: 500px;
     }
 }
 

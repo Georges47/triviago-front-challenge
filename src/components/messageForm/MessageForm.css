@@ -3,17 +3,28 @@
     flex-direction: column;
     align-items: center;
     margin-top: 2rem;
+    gap:4px;
+
 
     & input {
         padding: 0.5rem;
         margin-bottom: 0.5rem;
+        font-family: Avenir, ui-monospace;
+        color: white;
+        background: rgb(2, 43, 58);
+        border: solid darkgray;
+        margin-right: 20px;
+
     }
 
     & button {
         padding: 0.5rem 1rem;
-        background-color: #333;
+        background-color: #435159;
         color: white;
         border: none;
         cursor: pointer;
+        font-family: Avenir, ui-monospace;
+        height: 100%;
+
     }
 }

@@ -50,9 +50,9 @@ export default MessageForm;
 
 {/*
     input -> para escribir el mensaje
-    type -> propiedad que indica que es texto
-    placeholder -> propiedad que muestra un mensaje predeterminado
-    value=(message} -> Asigna el valor del campo de entrada al estado message
-    onChange -> para que el estado se actualice
+    type → propiedad que indica que es texto
+    placeholder → propiedad que muestra un mensaje predeterminado
+    value=(message) → Asigna el valor del campo de entrada al estado message
+    onChange → para que el estado se actualice
 
 */}
