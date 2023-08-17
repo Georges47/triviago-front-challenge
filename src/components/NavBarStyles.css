@@ -15,7 +15,7 @@ nav{
 #navbar li{
     list-style: none;
     padding-top: 0 20px;
-    position: relative;
+    position: center;
 }
 #navbar li a{
     text-decoration: none;
