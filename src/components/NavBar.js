@@ -5,7 +5,11 @@ function NavBar() {
        <nav>
         <div>
             <ul id="navbar">
-                <li> Message App </li>
+                <li>
+                     <a className="active">
+                        Message App 
+                    </a>
+                </li>
             </ul>
         </div>
        </nav>
