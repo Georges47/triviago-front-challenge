@@ -7,7 +7,12 @@ function NavBar() {
             <ul id="navbar">
                 <li>
                      <a className="active">
-                        Message App 
+                        Message App
+                    </a>
+                </li>
+                <li>
+                     <a className="active">
+                        <Link to="/Message">Message App </Link>
                     </a>
                 </li>
             </ul>
