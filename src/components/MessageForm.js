@@ -18,7 +18,7 @@ function MessageForm({ onSendMessage }) {
   return (
     <form onSubmit={handleSubmit}>
       <label>
-        Mensagge:
+        Mesagge:
         <input
           type="text"
           value={message}
