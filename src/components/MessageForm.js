@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './MessageForm.css';
 
-function MessageForm() {
+function MessageForm({ onSendMessage }) {
   const [message, setMessage] = useState('');
   const handleInputChange = (event) => {
     setMessage(event.target.value);
@@ -9,7 +9,10 @@ function MessageForm() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert(`Message sent successfully: ${message}`);
+    if (message.trim() !== '') {
+      onSendMessage(message);
+      setMessage('');
+    }
   };
 
   return (
