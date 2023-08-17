@@ -1,5 +1,5 @@
 import React from 'react';
-import './Messages.css';
+import './Styles.css/Messages.css';
 import Message from './Message';
 
 function Messages({ messages }) {
