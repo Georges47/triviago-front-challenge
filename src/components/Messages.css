@@ -1,0 +1,21 @@
+/* Messages.css */
+
+div {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
