@@ -1,14 +1,16 @@
 import React from 'react';
 import './Messages.css';
+import Message from './Message';
+
 function Messages({ messages }) {
   return (
-    <div>
-      <h1>Messages</h1>
-      <ul>
+    <div className="messages">
+      <h1>Message</h1>
+      <div className="message-list">
         {messages.map((message, index) => (
-          <li key={index}>{message}</li>
+          <Message key={index} text={message} />
         ))}
-      </ul>
+      </div>
     </div>
   );
 }
