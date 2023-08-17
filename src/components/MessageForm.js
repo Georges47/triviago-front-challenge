@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './MessageForm.css';
 
 function MessageForm() {
   const [message, setMessage] = useState('');
