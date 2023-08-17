@@ -24,7 +24,7 @@ nav{
     color: #fff;
     transition: 0.3s ease-in-out;
 }
-#navbar li a:hover,
+/* #navbar li a:hover,
 #navbar li a.active{
     color:black
 }
@@ -37,4 +37,4 @@ nav{
     position: absolute;
     bottom: -4px;
     left: 20px;
-}
+} */
