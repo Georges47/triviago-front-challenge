@@ -9,13 +9,13 @@ function MessageForm() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert(`Mensaje enviado: ${message}`);
+    alert(`Message sent successfully: ${message}`);
   };
 
   return (
     <form onSubmit={handleSubmit}>
       <label>
-        Your Mensagge:
+        Mensagge:
         <input
           type="text"
           value={message}
